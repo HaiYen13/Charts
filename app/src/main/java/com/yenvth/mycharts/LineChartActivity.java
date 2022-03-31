@@ -29,9 +29,18 @@ public class LineChartActivity extends AppCompatActivity {
         lineChart.setData(lineData);
         lineChart.invalidate();
         //TODO: Set background color
-        lineChart.setBackgroundColor(Color.RED);
+        lineChart.setBackgroundColor(Color.WHITE);
         //TODO: set text if data are not available
         lineChart.setNoDataText("Data not available");
+
+        //TODO: custom line
+        lineDataSet.setColor(Color.RED); // TODO: set màu của đường
+        lineDataSet.setCircleColor(Color.RED);// TODO: set màu của các điểm tròn
+        lineDataSet.setDrawCircles(true);//
+        lineDataSet.setDrawCircleHole(true);
+        lineDataSet.setLineWidth(5);
+        lineDataSet.setCircleRadius(10);
+        lineDataSet.setValueTextColor(Color.BLACK);
 
 
     }
